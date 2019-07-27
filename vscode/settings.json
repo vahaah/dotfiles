@@ -12,7 +12,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "editor.glyphMargin": true,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.rulers": [
     80
   ],
@@ -43,7 +43,7 @@
     "**/.coverage": true,
     "**/*.py[co]": true
   },
-  "git.autofetch": false,
+  "git.autofetch": true,
   "python.formatting.provider": "none",
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
   "python.terminal.activateEnvironment": true,
@@ -53,13 +53,11 @@
   "terminal.integrated.enableBell": true,
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.colorCustomizations": {
     "gitDecoration.modifiedResourceForeground": "#d4cb68"
   },
-  "workbench.colorTheme": "Ayu Dark",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "ayu",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "workbench.tree.renderIndentGuides": "none",
@@ -74,9 +72,13 @@
   "breadcrumbs.enabled": false,
   "cSpell.userWords": [
     "autofetch",
+    "funcy",
     "mpan",
     "mprn",
     "venv",
     "vetur"
   ],
+  "terminal.integrated.rendererType": "dom",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
