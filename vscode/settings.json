@@ -72,4 +72,11 @@
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
   "breadcrumbs.enabled": false,
+  "cSpell.userWords": [
+    "autofetch",
+    "mpan",
+    "mprn",
+    "venv",
+    "vetur"
+  ],
 }

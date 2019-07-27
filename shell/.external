@@ -4,10 +4,9 @@
 #
 # This file is used as a part of `.shell_env`
 
-# === Autocomplete ===
+# === iTerm2 ===
 
-source <(npm completion)  # adds normal autocomplete to `npm` commands
-
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # === fzf ===
 # https://github.com/junegunn/fzf
@@ -57,3 +56,13 @@ n() {
     rm -f "$NNN_TMPFILE"
   fi
 }
+
+# === virtualenvwrapper ===
+
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "WARNING: Can't find virtualenvwrapper.sh"
+fi
