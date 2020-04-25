@@ -13,6 +13,7 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 
 # === Path modifications ===
@@ -20,7 +21,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 # These lines should be the first ones
 
 # GPG agent:
-PATH="/usr/local/opt/gpg-agent/bin:$PATH"
+PATH="/usr/local/opt/gpg2/bin:$PATH"
 
 # Now `python` points to `python3` from `brew`:
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -36,6 +37,9 @@ PATH="/usr/local/opt/postgresql/bin:$PATH"
 
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
+
+# flutter:
+PATH="$HOME/.flutter_bin/bin:$PATH"
 
 export PATH
 
@@ -96,3 +100,25 @@ eval "$(rbenv init -)"
 export NODE_REPL_HISTORY="$HOME/.node_history"
 # Use sloppy mode by default, matching web browsers.
 export NODE_REPL_MODE='sloppy'
+
+# === Android ===
+
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# === starship ===
+
+eval "$(starship init zsh)"
+
+
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/vahaah/Projects/cbs/node_modules/tabtab/.completions/slss.zsh
+

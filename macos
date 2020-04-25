@@ -51,6 +51,14 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Enable repeating keys by pressing and holding down keys
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# === Dock ===
+
+# Remove workspace auto-switching
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+
 
 # === Finder ===
 

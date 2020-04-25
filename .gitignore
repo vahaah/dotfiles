@@ -37,6 +37,7 @@ Temporary Items
 *.merged-ca-bundle
 
 # Folders:
+.vscode/
 .SublimeREPLHistory/
 Package Control.cache/
 

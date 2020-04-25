@@ -30,13 +30,19 @@ HIST_IGNORE_SPACE="true"
 
 plugins=(
   brew
+  cabal
   colorize
   django
   docker
   docker-compose
   extract
+  git
   gitfast
   go
+  helm
+  history
+  iterm2
+  jsontools
   kubectl
   osx
   pip
@@ -45,6 +51,7 @@ plugins=(
   pyenv
   python
   virtualenvwrapper
+  vscode
 )
 
 # User configuration
