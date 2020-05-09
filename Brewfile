@@ -97,6 +97,7 @@ brew "pgcli"
 brew "pinentry-mac"
 brew "postgresql", restart_service: true
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "rabbitmq"
 brew "ruby-build"
 brew "rbenv"

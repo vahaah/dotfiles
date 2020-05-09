@@ -48,10 +48,6 @@
     "**/*.py[co]": true
   },
   "git.autofetch": true,
-  "python.formatting.provider": "none",
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
-  "python.terminal.activateEnvironment": true,
-  "python.workspaceSymbols.enabled": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.enableBell": true,
@@ -65,7 +61,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "workbench.tree.renderIndentGuides": "none",
-  "python.linting.enabled": true,
   "git.showInlineOpenFileAction": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
@@ -84,4 +79,24 @@
   "workbench.editor.showTabs": true,
   "python.jediEnabled": false,
   "gitlens.gitCommands.closeOnFocusOut": true,
+  "gitHistory.alwaysPromptRepositoryPicker": true,
+  "markdown.extension.toc.githubCompatibility": true,
+  "python.terminal.activateEnvironment": true,
+  "python.workspaceSymbols.enabled": true,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=120",
+  ],
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "black",
+  "python.formatting.autopep8Args": [
+    "--experimental"
+  ],
+  "python.formatting.blackArgs": [],
+  "restructuredtext.confPath": "",
+  "python.linting.banditEnabled": true
 }

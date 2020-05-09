@@ -1,5 +1,6 @@
 code --install-extension 42crunch.vscode-openapi
 code --install-extension EditorConfig.EditorConfig
+code --install-extension alanz.vscode-hie-server
 code --install-extension alexdima.copy-relative-path
 code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension be5invis.toml
