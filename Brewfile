@@ -82,6 +82,7 @@ brew "libomp"
 brew "libpq"
 brew "libusb-compat"
 brew "little-cms2"
+brew "mailhog", restart_service: true
 brew "mas"
 brew "nano"
 brew "nmap"

@@ -98,5 +98,6 @@
   ],
   "python.formatting.blackArgs": [],
   "restructuredtext.confPath": "",
-  "python.linting.banditEnabled": true
+  "python.linting.banditEnabled": true,
+  "editor.largeFileOptimizations": false
 }

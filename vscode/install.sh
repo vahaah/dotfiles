@@ -19,6 +19,7 @@ code --install-extension littlefoxteam.vscode-python-test-adapter
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode.cpptools
 code --install-extension ms-python.python
 code --install-extension ms-vscode.go
 code --install-extension ms-vscode.sublime-keybindings
@@ -34,3 +35,4 @@ code --install-extension stevejpurves.cucumber
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension teabyii.ayu
 code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension vscode-drawio
