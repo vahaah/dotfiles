@@ -70,6 +70,15 @@
   "breadcrumbs.enabled": true,
   "terminal.integrated.rendererType": "dom",
   "editor.suggestSelection": "first",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "property.readonly": "#35166d",
+      "*.declaration": {
+        "bold": true
+      }
+    }
+  },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.maxMemoryForLargeFilesMB": 10000,
   "[xml]": {
