@@ -108,5 +108,9 @@
   "python.formatting.blackArgs": [],
   "restructuredtext.confPath": "",
   "python.linting.banditEnabled": true,
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
+  "languageServerHaskell.enableHIE": true,
+  "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
+  "languageServerHaskell.hlintOn": true,
+  "languageServerHaskell.maxNumberOfProblems": 100
 }

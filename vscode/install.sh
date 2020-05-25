@@ -16,6 +16,7 @@ code --install-extension justusadam.language-haskell
 code --install-extension justusadam.yzhang.markdown-all-in-one
 code --install-extension lextudio.restructuredtext
 code --install-extension littlefoxteam.vscode-python-test-adapter
+code --install-extension MaxGabriel.brittany
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-azuretools.vscode-docker

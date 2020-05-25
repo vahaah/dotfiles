@@ -1,7 +1,7 @@
-- clean: ['~']
+- clean: ["~"]
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     # Terminal:
@@ -43,18 +43,22 @@
 - link:
     # vscode:
     "~/Library/Application Support/Code/User/settings.json":
-        path: vscode/settings.json
-        create: true
+      path: vscode/settings.json
+      create: true
     "~/Library/Application Support/Code/User/keybindings.json":
-        path: vscode/keybindings.json
-        create: true
+      path: vscode/keybindings.json
+      create: true
     "~/Library/Application Support/Code/User/snippets":
-        path: vscode/snippets
-        create: true
+      path: vscode/snippets
+      create: true
 
 - shell:
-  - [bash ./vscode/install.sh, Installing vscode extensions]
+    - [bash ./vscode/install.sh, Installing vscode extensions]
+
+- shell:
+    - [bash ./haskell/stack.sh, Installing Haskell extensions]
+    - [bash ./haskell/hie.sh, Installing HIE]
 
 # Cleaning up:
 - shell:
-  - [brew cleanup, Cleaning up]
+    - [brew cleanup, Cleaning up]
