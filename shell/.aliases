@@ -36,3 +36,12 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# Neovim:
+alias v='nvim'
+
+# fzf for vim
+alias f='v `fzf -i`'
+
+# fzf for code
+alias c='code `fzf -i`'

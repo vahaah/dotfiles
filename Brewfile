@@ -86,6 +86,7 @@ brew "little-cms2"
 brew "mailhog", restart_service: true
 brew "mas"
 brew "nano"
+brew "neovim"
 brew "nmap"
 brew "nnn"
 brew "node"
