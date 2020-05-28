@@ -59,6 +59,8 @@
     - [bash ./haskell/stack.sh, Installing Haskell extensions]
     - [bash ./haskell/hie.sh, Installing HIE]
 
+- shell:
+    - [bash ./duti.sh, File associations]
 # Cleaning up:
 - shell:
     - [brew cleanup, Cleaning up]
