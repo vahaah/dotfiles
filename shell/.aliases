@@ -44,4 +44,7 @@ alias v='nvim'
 alias f='v `fzf -i`'
 
 # fzf for code
-alias c='code `fzf -i`'
+alias c='code -n `fzf -i`'
+
+# ag
+alias s='ag'
