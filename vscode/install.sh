@@ -1,5 +1,6 @@
 code --install-extension 42crunch.vscode-openapi
 code --install-extension EditorConfig.EditorConfig
+code --install-extension aeschli.vscode-css-formatter
 code --install-extension alanz.vscode-hie-server
 code --install-extension alexdima.copy-relative-path
 code --install-extension alexkrechik.cucumberautocomplete
@@ -11,6 +12,7 @@ code --install-extension donjayamanne.githistory
 code --install-extension eamodio.gitlens
 code --install-extension eriklynd.json-tools
 code --install-extension felipe.nasc-touchbar
+code --install-extension github.github-vscode-theme
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension justusadam.language-haskell
 code --install-extension justusadam.yzhang.markdown-all-in-one

@@ -54,8 +54,9 @@
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": -2,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#1c1c1b",
+    "statusBar.background": "#1c1c1b"
   },
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "newUntitledFile",
