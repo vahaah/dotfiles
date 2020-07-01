@@ -13,17 +13,20 @@ code --install-extension eamodio.gitlens
 code --install-extension eriklynd.json-tools
 code --install-extension felipe.nasc-touchbar
 code --install-extension github.github-vscode-theme
+code --install-extension github.vscode-pull-request-github
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension justusadam.language-haskell
 code --install-extension justusadam.yzhang.markdown-all-in-one
 code --install-extension lextudio.restructuredtext
 code --install-extension littlefoxteam.vscode-python-test-adapter
 code --install-extension MaxGabriel.brittany
+code --install-extension mattn.lisp
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.go
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension mtxr.sqltools
@@ -39,3 +42,4 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension teabyii.ayu
 code --install-extension visualstudioexptteam.vscodeintellicode
 code --install-extension vscode-drawio
+code --install-extension wakatime.vscode-wakatime

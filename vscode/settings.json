@@ -94,13 +94,13 @@
   "python.terminal.activateEnvironment": true,
   "python.workspaceSymbols.enabled": true,
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
-  "python.linting.pylintEnabled": true,
+  "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length=120",
   ],
   "python.linting.enabled": true,
-  "python.linting.mypyEnabled": true,
+  "python.linting.mypyEnabled": false,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "black",
   "python.formatting.autopep8Args": [
@@ -115,5 +115,6 @@
   "languageServerHaskell.hlintOn": true,
   "languageServerHaskell.maxNumberOfProblems": 100,
   "autoDocstring.docstringFormat": "google",
-  "autoDocstring.includeName": true
+  "autoDocstring.includeName": true,
+  "python.languageServer": "Pylance"
 }

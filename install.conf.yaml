@@ -29,6 +29,7 @@
     # Editors:
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
+    ~/.spacemacs: emacs/spacemacs.cl
 
 # Installing dependencies:
 - brewfile:
@@ -58,6 +59,7 @@
 - shell:
     - [bash ./haskell/stack.sh, Installing Haskell extensions]
     - [bash ./haskell/hie.sh, Installing HIE]
+    - [bash ./haskell/cabal.sh, Installing Packages]
 
 - shell:
     - [bash ./duti.sh, File associations]

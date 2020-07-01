@@ -29,27 +29,38 @@ HIST_IGNORE_SPACE="true"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
+  aws
   brew
   cabal
+  cargo
+  celery
   colorize
   django
   docker
   docker-compose
+  emacs
   extract
+  flutter
+  gem
   git
   gitfast
-  go
+  golang
   helm
   history
   iterm2
   jsontools
+  node
+  npm
   kubectl
   osx
   pip
   pj
   postgres
   pyenv
+  pylint
   python
+  redis-cli
+  rust
   virtualenvwrapper
   vscode
 )
