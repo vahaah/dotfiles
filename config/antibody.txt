@@ -1,5 +1,6 @@
 # Sorted in order of appearance (new at the bottom):
 zsh-users/zsh-syntax-highlighting
+denysdovhan/spaceship-prompt
 
 
 # Theme, should be the last:

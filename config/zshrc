@@ -61,7 +61,6 @@ plugins=(
   python
   redis-cli
   rust
-  virtualenvwrapper
   vscode
 )
 

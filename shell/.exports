@@ -9,11 +9,11 @@
 
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L $(brew --prefix openssl@1.1)/lib"
+export CPPFLAGS="-I $(brew --prefix openssl@1.1)/include"
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PKG_CONFIG_PATH="$(brew --prefix openssl@1.1)/lib/pkgconfig"
+export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
 
 
 # === Path modifications ===
@@ -43,7 +43,8 @@ PATH="$HOME/.flutter_bin/bin:$PATH"
 
 export PATH
 
-
+# go:
+export GOPATH="$HOME/Go/"
 # === General ===
 
 # Editor:
