@@ -1,120 +1,127 @@
 {
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "autoDocstring.docstringFormat": "google",
+  "autoDocstring.includeName": true,
+  "breadcrumbs.enabled": true,
+  "cSpell.diagnosticLevel": "Hint",
   "cSpell.language": "en,en-GB,en-US,ru",
   "cSpell.showStatus": false,
-  "cSpell.diagnosticLevel": "Hint",
   "debug.allowBreakpointsEverywhere": true,
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
   "editor.colorDecorators": true,
+  "editor.cursorSurroundingLines": 3,
   "editor.dragAndDrop": false,
   "editor.folding": false,
-  "editor.showFoldingControls": "mouseover",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSaveMode": "modifications",
   "editor.glyphMargin": true,
+  "editor.hover.enabled": true,
+  "editor.largeFileOptimizations": false,
   "editor.minimap.enabled": true,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [
     88
   ],
   "editor.scrollBeyondLastLine": false,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "*.declaration": {
+        "bold": true
+      },
+      "property.readonly": "#35166d"
+    }
+  },
+  "editor.showFoldingControls": "mouseover",
   "editor.snippetSuggestions": "none",
-  "editor.cursorSurroundingLines": 3,
-  "editor.useTabStops": true,
-  "editor.formatOnPaste": true,
+  "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
+  "editor.useTabStops": true,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 88,
-  "editor.hover.enabled": true,
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
+    "*.pyi": "python",
     ".babelrc": "jsonc",
-    ".eslintrc": "jsonc",
-    "*.pyi": "python"
+    ".eslintrc": "jsonc"
   },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
+    "**/*.py[co]": true,
     "**/.DS_Store": true,
-    "**/__pycache__": true,
     "**/.cache": true,
-    "**/.idea": true,
-    "**/.pytest_cache": true,
-    "**/.mypy_cache": true,
-    "**/.venv": true,
     "**/.coverage": true,
-    "**/*.py[co]": true
+    "**/.idea": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true
   },
-  "git.autofetch": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.integrated.enableBell": true,
-  "window.clickThroughInactive": false,
-  "window.newWindowDimensions": "maximized",
-  "window.zoomLevel": -2,
-  "workbench.colorTheme": "GitHub Dark",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#1c1c1b"
-  },
-  "workbench.editor.labelFormat": "short",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "git.showInlineOpenFileAction": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.suggest.autoImports": false,
-  "typescript.suggest.autoImports": false,
-  "vetur.completion.autoImport": false,
-  "vetur.experimental.templateInterpolationService": true,
-  "breadcrumbs.enabled": true,
-  "terminal.integrated.rendererType": "dom",
-  "editor.suggestSelection": "first",
-  "editor.semanticTokenColorCustomizations": {
-    "enabled": true,
-    "rules": {
-      "property.readonly": "#35166d",
-      "*.declaration": {
-        "bold": true
-      }
-    }
-  },
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.maxMemoryForLargeFilesMB": 10000,
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "go.useLanguageServer": true,
-  "workbench.editor.showTabs": true,
-  "python.jediEnabled": false,
-  "gitlens.gitCommands.closeOnFocusOut": true,
+  "git.autofetch": true,
+  "git.showInlineOpenFileAction": false,
   "gitHistory.alwaysPromptRepositoryPicker": true,
-  "markdown.extension.toc.githubCompatibility": true,
-  "python.terminal.activateEnvironment": true,
-  "python.workspaceSymbols.enabled": true,
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": [
-    "--max-line-length=120",
-  ],
-  "python.linting.enabled": true,
-  "python.linting.mypyEnabled": false,
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "black",
-  "python.formatting.autopep8Args": [
-    "--experimental"
-  ],
-  "python.formatting.blackArgs": [],
-  "restructuredtext.confPath": "",
-  "python.linting.banditEnabled": true,
-  "editor.largeFileOptimizations": false,
+  "gitlens.gitCommands.closeOnFocusOut": true,
+  "go.useLanguageServer": true,
+  "javascript.suggest.autoImports": false,
   "languageServerHaskell.enableHIE": true,
   "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
   "languageServerHaskell.hlintOn": true,
   "languageServerHaskell.maxNumberOfProblems": 100,
-  "autoDocstring.docstringFormat": "google",
-  "autoDocstring.includeName": true,
-  "python.languageServer": "Pylance"
+  "markdown.extension.toc.githubCompatibility": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.formatting.autopep8Args": [
+    "--experimental"
+  ],
+  "python.formatting.blackArgs": [],
+  "python.formatting.blackPath": "black",
+  "python.formatting.provider": "black",
+  "python.jediEnabled": false,
+  "python.languageServer": "Pylance",
+  "python.linting.banditEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=120"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": true,
+  "python.workspaceSymbols.enabled": true,
+  "pythonTestExplorer.testFramework": "pytest",
+  "restructuredtext.confPath": "",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.rendererType": "dom",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "vetur.completion.autoImport": false,
+  "vetur.experimental.templateInterpolationService": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.clickThroughInactive": false,
+  "window.newWindowDimensions": "maximized",
+  "window.zoomLevel": -2,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1c1c1b"
+  },
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.showTabs": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tree.renderIndentGuides": "none"
 }
