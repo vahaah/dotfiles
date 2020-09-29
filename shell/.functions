@@ -77,9 +77,9 @@ loadenv() {
 # Cabal
 
 function cupload() {
-    cabal upload "$1" -u vrom911
+    cabal upload "$1" -u vahaah
 }
 
 function cupload-doc() {
-    cabal upload -d "$1" --publish -u vrom911
+    cabal upload -d "$1" --publish -u vahaah
 }
