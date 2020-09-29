@@ -57,9 +57,11 @@
     - [bash ./vscode/install.sh, Installing vscode extensions]
 
 - shell:
-    - [bash ./haskell/stack.sh, Installing Haskell extensions]
-    - [bash ./haskell/hie.sh, Installing HIE]
-    - [bash ./haskell/cabal.sh, Installing Packages]
+    - command: curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+      stdin: true
+      stdout: true
+      description: Installing GHCup
+      quiet: true
 
 - shell:
     - [bash ./duti.sh, File associations]

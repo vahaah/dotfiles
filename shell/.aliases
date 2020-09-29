@@ -48,3 +48,20 @@ alias c='code -n `fzf -i`'
 
 # ag
 alias s='ag'
+
+# Cabal
+alias cbuild="cabal build --enable-tests --enable-benchmarks --write-ghc-environment-files=always -O0"
+alias ctest="cabal test --enable-tests --test-show-details=direct -O0"
+alias cbench="cabal bench --enable-benchmarks -O0"
+alias crun="cabal run -O0"
+alias cinstall="cabal install --installdir=/home/USERNAME/.local/bin --overwrite-policy=always --install-method=copy"
+alias cclean="cabal clean"
+alias cupdate="cabal update"
+alias crepl="cabal repl --build-depends pretty-simple"
+alias cdoc="cabal haddock --enable-documentation"
+alias cdochackage="cabal haddock --enable-documentation --haddock-for-hackage"
+alias cdist="cabal sdist"
+
+# Stack
+alias sbuild="stack build        -j 2 --test --bench --no-run-tests --no-run-benchmarks"
+alias fbuild="stack build --fast -j 2 --test --bench --no-run-tests --no-run-benchmarks"

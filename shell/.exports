@@ -50,6 +50,9 @@ PATH="$HOME/.flutter_bin/bin:$PATH"
 PATH="/usr/local/opt/openldap/bin:$PATH"
 PATH="/usr/local/opt/openldap/sbin:$PATH"
 
+# Haskell
+export PATH="$PATH:$HOME/.ghcup/bin"
+
 export PATH
 
 # go:
@@ -144,4 +147,10 @@ fi
 # === gnutls ===
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
+
+# Stack
+
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+eval "$(stack --bash-completion-script stack)"
 
