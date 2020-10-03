@@ -123,5 +123,9 @@
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "haskell.formattingProvider": "brittany",
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  }
 }
