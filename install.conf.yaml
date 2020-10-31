@@ -2,6 +2,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [mkdir ~/.emacs.d]
 
 - link:
     # Terminal:
@@ -29,7 +30,7 @@
     # Editors:
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
-    ~/.spacemacs: emacs/spacemacs.cl
+    ~/.emacs.d/init.el: emacs/init.el
 
 # Installing dependencies:
 - brewfile:

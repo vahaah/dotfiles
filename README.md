@@ -1,6 +1,4 @@
-# vahaah's dotfiles [WIP]
-
-Inspired by the [sobolevn/dotfiles](https://github.com/sobolevn/dotfiles)
+# vahaah's dotfiles
 
 ## Local configuration
 
