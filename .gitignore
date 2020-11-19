@@ -41,4 +41,7 @@ Temporary Items
 .SublimeREPLHistory/
 Package Control.cache/
 
+# emacs
+*~
+
 
