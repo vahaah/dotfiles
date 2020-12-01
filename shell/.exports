@@ -130,6 +130,8 @@ eval "$(pyenv virtualenv-init -)"
 # rbenv:
 eval "$(rbenv init -)"
 
+# tldr:
+source ~/.tldr.complete
 
 # === Histories ===
 

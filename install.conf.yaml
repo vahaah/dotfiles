@@ -16,6 +16,7 @@
     ~/.hushlogin: config/hushlogin
     ~/.antibody: config/antibody.txt
     ~/.config/starship.toml: config/starship.toml
+    ~/.tldr.complete: config/tldr.complete
 
     # SSH:
     ~/.ssh/config: config/ssh_config
