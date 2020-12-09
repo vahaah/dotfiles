@@ -39,6 +39,12 @@ PATH="$PATH:$HOME/.poetry/bin"
 # postgres utilities like `psql`:
 PATH="/usr/local/opt/postgresql/bin:$PATH"
 
+# sqlite:
+PATH="/usr/local/opt/sqlite/bin:$PATH"
+LDFLAGS="-L /usr/local/opt/sqlite/lib $LDFLAGS"
+CPPFLAGS="-I /usr/local/opt/sqlite/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
+
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
 LDFLAGS="-L /usr/local/opt/postgresql/lib $LDFLAGS"
@@ -50,6 +56,12 @@ PATH="/usr/local/opt/imagemagick/bin:$PATH"
 LDFLAGS="-L /usr/local/opt/imagemagick/lib  $LDFLAGS"
 CPPFLAGS="-I /usr/local/opt/imagemagick/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/imagemagick/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# curl:
+PATH="/usr/local/opt/curl/bin:$PATH"
+LDFLAGS="-L /usr/local/opt/curl/lib  $LDFLAGS"
+CPPFLAGS="-I /usr/local/opt/curl/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # krb5:
 PATH="/usr/local/opt/krb5/bin:$PATH"
