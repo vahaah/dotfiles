@@ -65,7 +65,6 @@ PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # krb5:
 PATH="/usr/local/opt/krb5/bin:$PATH"
-PATH="/usr/local/opt/krb5/sbin:$PATH"
 LDFLAGS="-L /usr/local/opt/krb5/lib $LDFLAGS"
 CPPFLAGS="-I /usr/local/opt/krb5/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
