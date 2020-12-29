@@ -84,6 +84,11 @@ PATH="/usr/local/opt/openldap/sbin:$PATH"
 LDFLAGS="-L /usr/local/opt/openldap/lib $LDFLAGS"
 CPPFLAGS="-I /usr/local/opt/openldap/include $CPPFLAGS"
 
+# zlib:
+LDFLAGS="-L /usr/local/opt/zlib/lib $LDFLAGS"
+CPPFLAGS="-I /usr/local/opt/zlib/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
+
 # Haskell
 PATH="$PATH:$HOME/.ghcup/bin"
 
