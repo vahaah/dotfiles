@@ -89,6 +89,12 @@ LDFLAGS="-L /usr/local/opt/zlib/lib $LDFLAGS"
 CPPFLAGS="-I /usr/local/opt/zlib/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
 
+# bzip2:
+PATH="/usr/local/opt/bzip2/bin:$PATH"
+PATH="/usr/local/opt/bzip2/sbin:$PATH"
+LDFLAGS="-L /usr/local/opt/bzip2/lib $LDFLAGS"
+CPPFLAGS="-I /usr/local/opt/bzip2/include $CPPFLAGS"
+
 # Haskell
 PATH="$PATH:$HOME/.ghcup/bin"
 
