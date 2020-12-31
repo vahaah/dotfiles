@@ -1,0 +1,40 @@
+{
+  "description" : "Blocks all Domains of Facebook",
+  "name" : "Blocker: Facebook, Instagram, Whatsapp",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1565268728.9608269,
+      "modificationDate" : 1589442997.0977941,
+      "owner" : "me",
+      "process" : "any",
+      "priority": "high",
+      "remote-domains" : [
+        "facebook.com",
+        "facebook.net",
+        "fb.com",
+        "messenger.com",
+        "whatsapp.com",
+        "whatsapp.net",
+        "fbcdn.com",
+        "fbcdn.net",
+        "fbcdn2.net",
+        "fbcdn2.com",
+        "fbsbx.com",
+        "tfbnw.net",
+        "instagram.com",
+        "instagram.net",
+        "facebook.net.edgekey.net",
+        "facebook-web-clients.appspot.com",
+        "fbcdn-profile-a.akamaihd.net",
+        "h-ct-m-fbx.fbsbx.com.online-metrix.net",
+        "instagramstatic-a.akamaihd.net",
+        "instagramstatic-a.akamaihd.net.edgesuite.net",
+        "profile.ak.facebook.com.edgesuite.net",
+        "static.ak.facebook.com.edgesuite.net",
+        "s-static.ak.facebook.com.edgekey.net",
+        "sac-h-ct-m-fbx.fbsbx.com.online-metrix.net"
+      ]
+    }
+  ]
+}

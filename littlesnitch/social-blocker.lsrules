@@ -1,0 +1,20 @@
+{
+  "description" : "Blocks Social Services",
+  "name" : "Blocker: VK, OK",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1565268728.9608269,
+      "modificationDate" : 1589442997.0977941,
+      "owner" : "me",
+      "process" : "any",
+      "priority": "high",
+      "remote-domains" : [
+        "vk.com",
+        "vkontakte.ru",
+        "ok.ru",
+        "ok.com",
+      ]
+    }
+  ]
+}
