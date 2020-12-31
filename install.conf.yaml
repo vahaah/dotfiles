@@ -3,6 +3,10 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [mkdir ~/.emacs.d]
+    - [
+        git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh,
+        Installing Oh My ZSH,
+      ]
 
 - link:
     # Terminal:
@@ -70,3 +74,4 @@
 # Cleaning up:
 - shell:
     - [brew cleanup, Cleaning up]
+    - [chsh -s $(which zsh), Change default shell]
