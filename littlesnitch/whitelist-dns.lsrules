@@ -1,6 +1,6 @@
 {
 	"description": "",
-	"name": "Whitelist (DNS)",
+	"name": "Whitelist: DNS",
 	"rules": [
 		{
 			"action": "allow",

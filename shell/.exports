@@ -13,7 +13,7 @@ export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
 PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
-LDFLAGS="-L $(brew --prefix openssl@1.1)/lib"
+LDFLAGS="-L$(brew --prefix openssl@1.1)/lib"
 CPPFLAGS="-I $(brew --prefix openssl@1.1)/include"
 PKG_CONFIG_PATH="$(brew --prefix openssl@1.1)/lib/pkgconfig"
 
@@ -41,38 +41,38 @@ PATH="/usr/local/opt/postgresql/bin:$PATH"
 
 # sqlite:
 PATH="/usr/local/opt/sqlite/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/sqlite/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/sqlite/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/postgresql/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/postgresql/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/postgresql/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/postgresql/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/postgresql/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # imagemagick:
 PATH="/usr/local/opt/imagemagick/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/imagemagick/lib  $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/imagemagick/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/imagemagick/lib  $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/imagemagick/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/imagemagick/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # curl:
 PATH="/usr/local/opt/curl/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/curl/lib  $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/curl/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/curl/lib  $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/curl/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # ruby:
 PATH="/usr/local/opt/ruby/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/ruby/lib  $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/ruby/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/ruby/lib  $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/ruby/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # krb5:
 PATH="/usr/local/opt/krb5/bin:$PATH"
-LDFLAGS="-L /usr/local/opt/krb5/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/krb5/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/krb5/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/krb5/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # flutter:
@@ -81,19 +81,19 @@ PATH="$HOME/.flutter_bin/bin:$PATH"
 # openldap:
 PATH="/usr/local/opt/openldap/bin:$PATH"
 PATH="/usr/local/opt/openldap/sbin:$PATH"
-LDFLAGS="-L /usr/local/opt/openldap/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/openldap/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/openldap/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/openldap/include $CPPFLAGS"
 
 # zlib:
-LDFLAGS="-L /usr/local/opt/zlib/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/zlib/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # bzip2:
 PATH="/usr/local/opt/bzip2/bin:$PATH"
 PATH="/usr/local/opt/bzip2/sbin:$PATH"
-LDFLAGS="-L /usr/local/opt/bzip2/lib $LDFLAGS"
-CPPFLAGS="-I /usr/local/opt/bzip2/include $CPPFLAGS"
+LDFLAGS="-L/usr/local/opt/bzip2/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/bzip2/include $CPPFLAGS"
 
 # Haskell
 PATH="$PATH:$HOME/.ghcup/bin"

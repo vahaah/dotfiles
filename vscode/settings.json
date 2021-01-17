@@ -139,10 +139,5 @@
     "editor.wordBasedSuggestions": false
   },
   "python.showStartPage": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ]
+  "workbench.editorAssociations": []
 }
