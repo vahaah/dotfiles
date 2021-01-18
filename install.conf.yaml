@@ -38,9 +38,8 @@
     ~/.emacs.d/init.el: emacs/init.el
 
 # Installing dependencies:
-- brewfile:
-    file: Brewfile
-    no-upgrage: true
+- shell:
+    - [brew bundle install, Installing Brew dependencies]
 
 # These links should be created after everything is installed:
 - link:
