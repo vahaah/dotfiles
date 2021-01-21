@@ -1,6 +1,5 @@
 code --install-extension 42Crunch.vscode-openapi
 code --install-extension aeschli.vscode-css-formatter
-code --install-extension alanz.vscode-hie-server
 code --install-extension alexdima.copy-relative-path
 code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension be5invis.toml
@@ -17,6 +16,8 @@ code --install-extension formulahendry.github-actions
 code --install-extension GitHub.github-vscode-theme
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension haskell.haskell
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension hediet.vscode-drawio
 code --install-extension justusadam.language-haskell
@@ -30,6 +31,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension mtxr.sqltools
@@ -41,6 +43,7 @@ code --install-extension redhat.vscode-yaml
 code --install-extension rust-lang.rust
 code --install-extension shakram02.bash-beautify
 code --install-extension shamanu4.django-intellisense
+code --install-extension sibiraj-s.vscode-scss-formatter
 code --install-extension stevejpurves.cucumber
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension teabyii.ayu
