@@ -5,6 +5,7 @@ code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension be5invis.toml
 code --install-extension christian-kohler.path-intellisense
 code --install-extension codezombiech.gitignore
+code --install-extension cschleiden.vscode-github-actions
 code --install-extension dariofuzinato.vue-peek
 code --install-extension Dart-Code.dart-code
 code --install-extension donjayamanne.githistory
@@ -35,6 +36,8 @@ code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension mtxr.sqltools
+code --install-extension mtxr.sqltools-driver-pg
+code --install-extension mtxr.sqltools-driver-sqlite
 code --install-extension njpwerner.autodocstring
 code --install-extension octref.vetur
 code --install-extension rebornix.ruby
