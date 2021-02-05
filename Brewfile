@@ -35,7 +35,6 @@ brew "fontconfig"
 brew "libffi"
 brew "pcre"
 brew "glib"
-brew "python@3.8"
 brew "cgal"
 brew "cmake"
 brew "cocoapods"
@@ -81,6 +80,7 @@ brew "hugo"
 brew "ilmbase"
 brew "libde265"
 brew "libheif"
+brew "python@3.8"
 brew "libomp"
 brew "openexr"
 brew "imagemagick"
@@ -180,6 +180,7 @@ cask "webpquicklook"
 cask "wkhtmltopdf"
 mas "1Password 7", id: 1333542190
 mas "Apple Configurator 2", id: 1037126344
+mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
 mas "Developer", id: 640199958
 mas "Disk Speed Test", id: 425264550
@@ -194,12 +195,12 @@ mas "Kindle", id: 405399194
 mas "Magic Lasso", id: 1198047227
 mas "Magnet", id: 441258766
 mas "Microsoft Outlook", id: 985367838
+mas "MoneyWiz", id: 1511185140
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1529448980
 mas "SafariMarkdownLinker", id: 1289119450
-mas "Save to Medium", id: 1485294824
 mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "SnippetsLab", id: 1006087419
