@@ -128,6 +128,7 @@ brew "ssh-copy-id", link: true
 brew "starship"
 brew "swig"
 brew "terminal-notifier"
+brew "terraform"
 brew "the_silver_searcher"
 brew "tig"
 brew "tinc"
@@ -194,9 +195,14 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Magic Lasso", id: 1198047227
 mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
 mas "MoneyWiz", id: 1511185140
 mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1529448980
