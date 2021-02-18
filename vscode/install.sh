@@ -18,6 +18,7 @@ code --install-extension GitHub.github-vscode-theme
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension Gruntfuggly.todo-tree
+code --install-extension hashicorp.terraform
 code --install-extension haskell.haskell
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension hediet.vscode-drawio
@@ -40,6 +41,7 @@ code --install-extension mtxr.sqltools-driver-pg
 code --install-extension mtxr.sqltools-driver-sqlite
 code --install-extension njpwerner.autodocstring
 code --install-extension octref.vetur
+code --install-extension pjmiravalle.terraform-advanced-syntax-highlighting
 code --install-extension rebornix.ruby
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
