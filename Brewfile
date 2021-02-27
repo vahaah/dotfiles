@@ -17,7 +17,6 @@ tap "nektos/tap"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 brew "libyaml"
-brew "gettext"
 brew "sqlite"
 brew "ansible"
 brew "ansible-lint"
@@ -33,6 +32,7 @@ brew "blueutil"
 brew "bzip2"
 brew "cabal-install"
 brew "fontconfig"
+brew "gettext"
 brew "libffi"
 brew "pcre"
 brew "glib"
@@ -178,3 +178,42 @@ cask "tunnelblick"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "wkhtmltopdf"
+mas "1Password 7", id: 1333542190
+mas "Apple Configurator 2", id: 1037126344
+mas "Be Focused Pro", id: 961632517
+mas "Bear", id: 1091189122
+mas "Developer", id: 640199958
+mas "Disk Speed Test", id: 425264550
+mas "DjVu Reader Pro", id: 895264364
+mas "DuckDuckGo Privacy Essentials", id: 1482920575
+mas "GarageBand", id: 682658836
+mas "Grammarly for Safari", id: 1462114288
+mas "iMovie", id: 408981434
+mas "JSONPeep", id: 1458969831
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Magic Lasso", id: 1198047227
+mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "MoneyWiz", id: 1511185140
+mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "Reeder", id: 1529448980
+mas "SafariMarkdownLinker", id: 1289119450
+mas "Save to Pocket", id: 1477385213
+mas "Slack", id: 803453959
+mas "SnippetsLab", id: 1006087419
+mas "Speedtest", id: 1153157709
+mas "Telegram", id: 747648890
+mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
+mas "Transmit", id: 1436522307
+mas "Tweetbot", id: 557168941
+mas "Twitter", id: 1482454543
+mas "Xcode", id: 497799835
