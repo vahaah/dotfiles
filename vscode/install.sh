@@ -30,11 +30,13 @@ code --install-extension MaxGabriel.brittany
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-dotnettools.vscode-dotnet-runtime
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension mtxr.sqltools
 code --install-extension mtxr.sqltools-driver-pg
@@ -54,6 +56,7 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension teabyii.ayu
 code --install-extension Tim-Koehler.helm-intellisense
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension VisualStudioExptTeam.vscodeintellicode-insiders
 code --install-extension WakaTime.vscode-wakatime
 code --install-extension wingrunr21.vscode-ruby
 code --install-extension yzhang.markdown-all-in-one
