@@ -12,6 +12,7 @@ code --install-extension donjayamanne.githistory
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
 code --install-extension eriklynd.json-tools
+code --install-extension evzen-wybitul.magic-racket
 code --install-extension felipe.nasc-touchbar
 code --install-extension formulahendry.github-actions
 code --install-extension GitHub.github-vscode-theme
