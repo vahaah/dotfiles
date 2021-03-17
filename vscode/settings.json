@@ -1,4 +1,19 @@
 {
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -72,8 +87,10 @@
   "git.autofetch": true,
   "git.showInlineOpenFileAction": false,
   "gitHistory.alwaysPromptRepositoryPicker": true,
+  "github-actions.org-features": true,
   "gitlens.gitCommands.closeOnFocusOut": true,
   "go.useLanguageServer": true,
+  "haskell.formattingProvider": "brittany",
   "javascript.suggest.autoImports": false,
   "languageServerHaskell.enableHIE": true,
   "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
@@ -96,6 +113,7 @@
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": false,
+  "python.showStartPage": false,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.terminal.activateEnvironment": true,
   "python.workspaceSymbols.enabled": true,
@@ -105,6 +123,7 @@
   "telemetry.enableTelemetry": false,
   "terminal.integrated.enableBell": true,
   "terminal.integrated.rendererType": "dom",
+  "todo-tree.tree.showScanModeButton": false,
   "typescript.suggest.autoImports": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "vetur.completion.autoImport": false,
@@ -112,33 +131,20 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "workbench.colorCustomizations": {
     "statusBar.background": "#1c1c1b"
   },
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.showTabs": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "haskell.formattingProvider": "brittany",
-  "[haskell]": {
-    "editor.defaultFormatter": "haskell.haskell"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [
-      80
-    ],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  },
-  "python.showStartPage": false,
-  "workbench.editorAssociations": [],
-  "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "GitHub Dark"
+  "workbench.tree.renderIndentGuides": "none"
 }
