@@ -1,5 +1,6 @@
 code --install-extension 42Crunch.vscode-openapi
 code --install-extension aeschli.vscode-css-formatter
+code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension alexdima.copy-relative-path
 code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension be5invis.toml
@@ -45,6 +46,7 @@ code --install-extension mtxr.sqltools-driver-sqlite
 code --install-extension njpwerner.autodocstring
 code --install-extension octref.vetur
 code --install-extension pjmiravalle.terraform-advanced-syntax-highlighting
+code --install-extension raynigon.nginx-formatter
 code --install-extension rebornix.ruby
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
