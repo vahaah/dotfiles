@@ -9,6 +9,7 @@ code --install-extension codezombiech.gitignore
 code --install-extension cschleiden.vscode-github-actions
 code --install-extension dariofuzinato.vue-peek
 code --install-extension Dart-Code.dart-code
+code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension donjayamanne.githistory
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
@@ -40,6 +41,7 @@ code --install-extension ms-toolsai.jupyter
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension ms-vscode.test-adapter-converter
 code --install-extension mtxr.sqltools
 code --install-extension mtxr.sqltools-driver-pg
 code --install-extension mtxr.sqltools-driver-sqlite
@@ -48,6 +50,7 @@ code --install-extension octref.vetur
 code --install-extension pjmiravalle.terraform-advanced-syntax-highlighting
 code --install-extension raynigon.nginx-formatter
 code --install-extension rebornix.ruby
+code --install-extension redhat.vscode-commons
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension rust-lang.rust

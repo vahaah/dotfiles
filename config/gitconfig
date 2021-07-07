@@ -13,13 +13,13 @@
   required = true
 	process = git-lfs filter-process
 [commit]
-	gpgsign = true
+	gpgsign = false
 [push]
   default = simple
 [user]
   useConfigOnly = true
 	name = Alex Vakhitov
-	email = alexius@hey.com
+	email = alex@vah.sh
 [diff]
   indentHeuristic = on
 [rerere]

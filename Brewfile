@@ -17,7 +17,6 @@ tap "nektos/tap"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 brew "libyaml"
-brew "sqlite"
 brew "ansible"
 brew "ansible-lint"
 brew "asciinema"
@@ -69,7 +68,7 @@ brew "gh"
 brew "git"
 brew "gnu-tar"
 brew "unbound", restart_service: true
-brew "gnupg"
+brew "gnupg", link: false
 brew "go"
 brew "graphviz"
 brew "hadolint"
@@ -78,20 +77,22 @@ brew "highlight"
 brew "htop"
 brew "hub"
 brew "hugo"
-brew "ilmbase"
+brew "ilmbase", link: true
 brew "libde265"
 brew "libheif"
 brew "python@3.8"
 brew "libomp"
-brew "openexr"
+brew "openexr", link: false
 brew "imagemagick"
 brew "inetutils"
 brew "jo"
 brew "jpegoptim"
+brew "oniguruma"
 brew "jq"
 brew "openjdk"
 brew "kotlin"
 brew "ldns"
+brew "lftp"
 brew "libusb-compat"
 brew "libxmlsec1"
 brew "lzlib"
@@ -179,9 +180,9 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "wkhtmltopdf"
 mas "1Password 7", id: 1333542190
+mas "Amphetamine", id: 937984704
 mas "Apple Configurator 2", id: 1037126344
-mas "Be Focused Pro", id: 961632517
-mas "Bear", id: 1091189122
+mas "Cyberduck", id: 409222199
 mas "Developer", id: 640199958
 mas "Disk Speed Test", id: 425264550
 mas "DjVu Reader Pro", id: 895264364
