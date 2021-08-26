@@ -17,7 +17,11 @@ code --install-extension eriklynd.json-tools
 code --install-extension evzen-wybitul.magic-racket
 code --install-extension felipe.nasc-touchbar
 code --install-extension formulahendry.github-actions
+code --install-extension GitHub.codespaces
+code --install-extension GitHub.copilot
 code --install-extension GitHub.github-vscode-theme
+code --install-extension GitHub.remotehub
+code --install-extension GitHub.vscode-codeql
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension Gruntfuggly.todo-tree
@@ -38,10 +42,12 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
+code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension ms-vscode.test-adapter-converter
+code --install-extension ms-vscode.vscode-github-issue-notebooks
 code --install-extension mtxr.sqltools
 code --install-extension mtxr.sqltools-driver-pg
 code --install-extension mtxr.sqltools-driver-sqlite

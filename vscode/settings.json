@@ -141,7 +141,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.editor.showTabs": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
@@ -149,5 +149,10 @@
   "githubPullRequests.fileListLayout": "flat",
   "diffEditor.ignoreTrimWhitespace": false,
   "redhat.telemetry.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
   "window.zoomLevel": -1
 }
