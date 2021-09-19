@@ -184,6 +184,7 @@ mas "Amphetamine", id: 937984704
 mas "Apple Configurator 2", id: 1037126344
 mas "Cyberduck", id: 409222199
 mas "Developer", id: 640199958
+mas "DevUtils", id: 1533756032
 mas "Disk Speed Test", id: 425264550
 mas "DjVu Reader Pro", id: 895264364
 mas "DuckDuckGo Privacy Essentials", id: 1482920575
@@ -193,6 +194,7 @@ mas "iMovie", id: 408981434
 mas "JSONPeep", id: 1458969831
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
+mas "LanguageTool", id: 1534275760
 mas "Magic Lasso", id: 1198047227
 mas "Magnet", id: 441258766
 mas "Microsoft Excel", id: 462058435
@@ -206,7 +208,6 @@ mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1529448980
-mas "SafariMarkdownLinker", id: 1289119450
 mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "SnippetsLab", id: 1006087419
@@ -217,4 +218,5 @@ mas "Things", id: 904280696
 mas "Transmit", id: 1436522307
 mas "Tweetbot", id: 557168941
 mas "Twitter", id: 1482454543
+mas "URL Linker", id: 1289119450
 mas "Xcode", id: 497799835

@@ -56,7 +56,6 @@ plugins=(
   pip
   pj
   postgres
-  pyenv
   pylint
   python
   redis-cli
