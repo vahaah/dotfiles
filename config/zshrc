@@ -35,7 +35,6 @@ plugins=(
   cargo
   celery
   colorize
-  django
   docker
   docker-compose
   emacs
