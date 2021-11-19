@@ -51,7 +51,7 @@ plugins=(
   node
   npm
   kubectl
-  osx
+  macos
   pip
   pj
   postgres

@@ -42,6 +42,8 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.makefile-tools
@@ -63,10 +65,12 @@ code --install-extension rust-lang.rust
 code --install-extension shakram02.bash-beautify
 code --install-extension shamanu4.django-intellisense
 code --install-extension sibiraj-s.vscode-scss-formatter
+code --install-extension sourcery.sourcery
 code --install-extension stevejpurves.cucumber
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension teabyii.ayu
 code --install-extension Tim-Koehler.helm-intellisense
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension VisualStudioExptTeam.vscodeintellicode-insiders
 code --install-extension WakaTime.vscode-wakatime

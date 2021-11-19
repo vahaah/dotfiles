@@ -154,5 +154,12 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "window.zoomLevel": -1
+  "go.toolsManagement.autoUpdate": true,
+  "window.zoomLevel": -1,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  }
 }
