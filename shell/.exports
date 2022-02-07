@@ -4,14 +4,13 @@
 #
 # This file is used as a part of `.shell_env`
 
-if [[ -f "/opt/homebrew/bin/brew" ]]; then
-    eval $(/opt/homebrew/bin/brew shellenv)
-fi
-
 # === Compiler flags ===
 
 # XCode path
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+
+# Libs
+export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
@@ -25,10 +24,10 @@ PKG_CONFIG_PATH="$(brew --prefix openssl@1.1)/lib/pkgconfig"
 # These lines should be the first ones
 
 # GPG agent:
-PATH="/usr/local/opt/gpg2/bin:$PATH"
+PATH="/opt/homebrew/opt/gpg2/bin:$PATH"
 
 # Now `python` points to `python3` from `brew`:
-PATH="/usr/local/opt/python/libexec/bin:$PATH"
+PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 
 # Adds `pipsi` and `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
@@ -40,63 +39,63 @@ PATH="$HOME/.cargo/bin:$PATH"
 PATH="$PATH:$HOME/.poetry/bin"
 
 # postgres utilities like `psql`:
-PATH="/usr/local/opt/postgresql/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/postgresql/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/postgresql/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/postgresql/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/postgresql/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/postgresql/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/postgresql/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # sqlite:
-PATH="/usr/local/opt/sqlite/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/sqlite/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/sqlite/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
 
 # imagemagick:
-PATH="/usr/local/opt/imagemagick/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/imagemagick/lib  $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/imagemagick/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/imagemagick/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/imagemagick/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/imagemagick/lib  $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/imagemagick/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/imagemagick/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # curl:
-PATH="/usr/local/opt/curl/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/curl/lib  $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/curl/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/curl/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/curl/lib  $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/curl/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # ruby:
-PATH="/usr/local/opt/ruby/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/ruby/lib  $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/ruby/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/ruby/lib  $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # krb5:
-PATH="/usr/local/opt/krb5/bin:$PATH"
-LDFLAGS="-L/usr/local/opt/krb5/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/krb5/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="/opt/homebrew/opt/krb5/bin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/krb5/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/krb5/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # flutter:
 PATH="$HOME/.flutter_bin/bin:$PATH"
 
 # openldap:
-PATH="/usr/local/opt/openldap/bin:$PATH"
-PATH="/usr/local/opt/openldap/sbin:$PATH"
-LDFLAGS="-L/usr/local/opt/openldap/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/openldap/include $CPPFLAGS"
+PATH="/opt/homebrew/opt/openldap/bin:$PATH"
+PATH="/opt/homebrew/opt/openldap/sbin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/openldap/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/openldap/include $CPPFLAGS"
 
 # zlib:
-LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
-PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
+LDFLAGS="-L/opt/homebrew/opt/zlib/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/zlib/include $CPPFLAGS"
+PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # bzip2:
-PATH="/usr/local/opt/bzip2/bin:$PATH"
-PATH="/usr/local/opt/bzip2/sbin:$PATH"
-LDFLAGS="-L/usr/local/opt/bzip2/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/bzip2/include $CPPFLAGS"
+PATH="/opt/homebrew/opt/bzip2/bin:$PATH"
+PATH="/opt/homebrew/opt/bzip2/sbin:$PATH"
+LDFLAGS="-L/opt/homebrew/opt/bzip2/lib $LDFLAGS"
+CPPFLAGS="-I/opt/homebrew/opt/bzip2/include $CPPFLAGS"
 
 # Haskell
 PATH="$PATH:$HOME/.ghcup/bin"
@@ -152,7 +151,7 @@ export PIPENV_NOSPIN=true # disables spinner for cleaner logs
 
 # nvm:
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+source "/opt/homebrew/opt/nvm/nvm.sh"
 
 # pyenv:
 eval "$(pyenv init --path)"
@@ -200,7 +199,7 @@ fi
 
 # === gnutls ===
 
-export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
+export GUILE_TLS_CERTIFICATE_DIRECTORY=/opt/homebrew/etc/gnutls/
 
 # Stack
 

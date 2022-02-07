@@ -4,6 +4,10 @@
 #
 # This file is used as a source file for zsh.
 
+if [[ -f "/opt/homebrew/bin/brew" ]]; then
+    eval $(/opt/homebrew/bin/brew shellenv)
+fi
+
 # === Plugin management ===
 
 antibody bundle < "$HOME/.antibody" > "$HOME/.zsh-plugins"
@@ -21,5 +25,5 @@ source "$HOME/.shell/.external"
 # === Local variables and overrides ===
 
 if [[ -f "$HOME/.shell_env_local" ]]; then
-  source "$HOME/.shell_env_local"
+    source "$HOME/.shell_env_local"
 fi
