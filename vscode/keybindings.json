@@ -23,5 +23,13 @@
   {
       "key": "cmd+,",
       "command": "-workbench.action.openSettings"
-  }
+},
+{
+    "key": "shift+alt+e",
+    "command": "workbench.action.closeSidebar"
+},
+{
+    "key": "shift+alt+w",
+    "command": "workbench.action.closePanel"
+}
 ]

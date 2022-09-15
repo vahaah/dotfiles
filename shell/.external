@@ -11,15 +11,15 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # === fzf ===
 # https://github.com/junegunn/fzf
 
-if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-  export PATH="$PATH:/opt/homebrew/opt/fzf/bin"
+if [[ ! "$PATH" == *$(brew --prefix)/opt/fzf/bin* ]]; then
+  export PATH="$PATH:$(brew --prefix)/opt/fzf/bin"
 fi
 
 # Auto-completion
-[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "$(brew --prefix)/opt/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
-source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
@@ -35,7 +35,7 @@ _fzf_compgen_path() {
 # === z ===
 # https://github.com/rupa/z
 
-source "/opt/homebrew/etc/profile.d/z.sh"
+source "$(brew --prefix)/etc/profile.d/z.sh"
 
 
 # === nnn ===
