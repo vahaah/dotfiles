@@ -79,6 +79,8 @@ source "$HOMEBREW_DIR/opt/nvm/nvm.sh"
 
 # pyenv:
 eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # rbenv:
 eval "$(rbenv init -)"
