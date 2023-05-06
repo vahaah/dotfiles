@@ -123,8 +123,8 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # Quicklookup plugins:
 
-xattr -r ~/Library/QuickLook
-xattr -d -r com.apple.quarantine ~/Library/QuickLook
+xattr ~/Library/QuickLook
+# xattr -d -r com.apple.quarantine ~/Library/QuickLook
 
 # QLColorCode
 defaults write org.n8gray.QLColorCode hlThumbTheme ide-xcode

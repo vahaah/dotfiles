@@ -20,6 +20,7 @@
   useConfigOnly = true
 	name = Alex Vakhitov
 	email = alex@vah.sh
+	signingkey = 3A2877FDF3B2348D8E3D678E6BBEBF27BBADD00E
 [diff]
   indentHeuristic = on
 [rerere]
@@ -49,3 +50,5 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
   path = ~/.gitconfig_local
+[pull]
+	rebase = true

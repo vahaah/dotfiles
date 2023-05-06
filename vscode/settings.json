@@ -155,11 +155,59 @@
     "jupyter-notebook": "left"
   },
   "go.toolsManagement.autoUpdate": true,
-  "window.zoomLevel": -1,
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
-    "plaintext": false,
+    "plaintext": true,
     "markdown": false
-  }
+  },
+  "dotnetAcquisitionExtension.existingDotnetPath": [
+    {
+      "extensionId": "vscodeintellicode-insiders",
+      "path": "/opt/homebrew/bin/dotnet"
+    }
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.mac": "/Users/vahaah/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path.mac": "/Users/vahaah/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.minikube-path.linux": "/home/codespace/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "settingsSync.ignoredSettings": [
+    "editor.fontFamily"
+  ],
+  "application.shellEnvironmentResolutionTimeout": 60,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "window.zoomLevel": -1
 }

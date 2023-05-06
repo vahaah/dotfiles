@@ -75,3 +75,56 @@ function cupload() {
 function cupload-doc() {
     cabal upload -d "$1" --publish -u vahaah
 }
+
+# === Chat GPT functions ===
+# model: gpt-4 is in private beta (have to get from waitlist)
+# model: gpt-3.5-turbo (if you don't have access)
+
+function hey_gpt() {
+    local prompt="$1"
+    curl -s https://api.openai.com/v1/chat/completions \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -d '{
+        "model": "gpt-4",
+        "messages": [{"role": "user", "content": "'$prompt'"}],
+        "temperature": 0.7
+    }' | jq -r '.choices[0].message.content'
+}
+
+alias h='hey_gpt'
+
+function data_gpt() {
+    local prompt="$1"
+    local data="$2"
+    local prompt_input="$prompt: $data"
+
+    curl -s https://api.openai.com/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d '{
+        "model": "gpt-4",
+        "messages": [{"role": "user", "content": "'$prompt_input'"}],
+        "temperature": 0.7
+    }' | jq -r '.choices[0].message.content'
+}
+
+alias dgpt='data_gpt'
+
+function img_gpt() {
+  local prompt="$1"
+
+  create_img=$(curl -s https://api.openai.com/v1/images/generations \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d '{
+        "prompt": "'$prompt'",
+        "n": 1,
+        "size": "1024x1024"
+    }')
+
+  echo "$create_img" | jq
+  url=$(echo "$create_img" | jq -r '.data[0].url')
+  rand_num=$((RANDOM % 1000000 + 1))
+  curl -s "$url" -o "img-$rand_num.png"
+}

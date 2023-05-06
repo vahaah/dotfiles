@@ -1,6 +1,9 @@
+tap "1password/tap"
 tap "adoptopenjdk/openjdk"
 tap "bramstein/webfonttools"
+tap "buildpacks/tap"
 tap "d12frosted/emacs-plus"
+tap "dart-lang/dart"
 tap "getantibody/tap"
 tap "github/gh"
 tap "heroku/brew"
@@ -10,18 +13,21 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "jesseduffield/lazydocker"
 tap "kowainik/tap"
 tap "mongodb/brew"
 tap "nektos/tap"
+tap "npiv/chatblade"
+tap "sass/sass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
+brew "act"
 brew "libyaml"
 brew "ansible"
 brew "ansible-lint"
+brew "antibody"
+brew "openexr"
 brew "webp"
-brew "jpeg-xl"
-brew "aom"
+brew "bzip2"
 brew "asciinema"
 brew "aspell"
 brew "automake"
@@ -31,37 +37,42 @@ brew "bash"
 brew "bash-completion"
 brew "bat"
 brew "blueutil"
-brew "bzip2"
 brew "cabal-install"
 brew "fontconfig"
-brew "gettext"
+brew "glib"
 brew "libffi"
 brew "pcre"
-brew "glib"
 brew "cgal"
+brew "cloc"
 brew "cmake"
+brew "ruby"
 brew "cocoapods"
 brew "colordiff"
 brew "coreutils"
 brew "ctags"
 brew "curl"
 brew "diff-so-fancy"
+brew "docker"
 brew "docker-clean"
+brew "doctl"
 brew "doitlive"
 brew "duti"
+brew "unixodbc"
 brew "elixir"
 brew "eot-utils"
 brew "exa"
 brew "fd"
+brew "woff2"
 brew "fontforge"
 brew "fpp"
-brew "unixodbc"
 brew "freetds"
 brew "fzf"
 brew "gawk"
-brew "libxml2"
+brew "libde265"
 brew "libgeotiff"
+brew "libheif"
 brew "libpq"
+brew "libxml2"
 brew "nss"
 brew "openjpeg"
 brew "gdal"
@@ -69,7 +80,6 @@ brew "geoip"
 brew "gh"
 brew "git"
 brew "gnu-tar"
-brew "unbound", restart_service: true
 brew "gnupg"
 brew "go"
 brew "graphviz"
@@ -79,14 +89,11 @@ brew "highlight"
 brew "htop"
 brew "hub"
 brew "hugo"
-brew "ilmbase", link: true
-brew "libde265"
-brew "libheif"
-brew "python@3.8"
-brew "libomp"
+brew "libomp", link: true
 brew "imagemagick"
 brew "imagemagick@6"
 brew "inetutils"
+brew "infracost"
 brew "jo"
 brew "jpegoptim"
 brew "oniguruma"
@@ -95,12 +102,12 @@ brew "openjdk"
 brew "kotlin"
 brew "ldns"
 brew "lftp"
-brew "openssl@3"
 brew "libusb-compat"
 brew "libxmlsec1"
 brew "lzlib"
 brew "mailhog"
 brew "mas"
+brew "mono-libgdiplus"
 brew "nano"
 brew "neovim"
 brew "nmap"
@@ -108,31 +115,35 @@ brew "nnn"
 brew "node"
 brew "nvm"
 brew "openapi-generator"
+brew "openssl@3"
 brew "optipng"
 brew "pandoc"
+brew "python-tabulate"
 brew "pgcli"
 brew "pinentry-mac"
-brew "postgresql", restart_service: true
+brew "postgresql@14", restart_service: true
 brew "sfcgal"
 brew "postgis"
-brew "postgresql@12"
-brew "postgresql@13"
+brew "pre-commit"
 brew "pth"
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "python@3.8"
 brew "rabbitmq"
 brew "ruby-build"
 brew "rbenv"
 brew "redis", restart_service: true
-brew "ruby"
 brew "rust"
 brew "rustup-init"
 brew "shellcheck"
-brew "ssh-copy-id", link: true
+brew "ssh-copy-id"
 brew "starship"
+brew "swift-format"
+brew "swiftformat"
 brew "swig"
 brew "terminal-notifier"
 brew "terraform"
+brew "terragrunt"
 brew "the_silver_searcher"
 brew "tig"
 brew "tinc"
@@ -146,30 +157,25 @@ brew "vim"
 brew "watchman"
 brew "wget"
 brew "wifi-password"
-brew "woff2"
 brew "yarn"
 brew "z"
 brew "zlib"
 brew "zsh"
+brew "buildpacks/tap/pack"
 brew "d12frosted/emacs-plus/emacs-plus@27"
-brew "getantibody/tap/antibody"
 brew "heroku/brew/heroku"
-brew "kowainik/tap/summoner-tui"
-brew "nektos/tap/act"
+brew "npiv/chatblade/chatblade"
 brew "wagoodman/dive/dive"
 brew "weaveworks/tap/eksctl"
-cask "adoptopenjdk8"
+cask "1password-cli"
 cask "android-platform-tools"
+cask "aws-vault"
+cask "dotnet"
 cask "font-consolas-for-powerline"
 cask "font-fira-code"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
-cask "font-roboto-mono"
-cask "font-roboto-mono-for-powerline"
 cask "gpg-suite"
-cask "intelliscape-caffeine"
-cask "java"
-cask "java8"
 cask "postman"
 cask "qlcolorcode"
 cask "qlimagesize"
@@ -183,3 +189,43 @@ cask "tunnelblick"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "wkhtmltopdf"
+mas "1Password for Safari", id: 1569813296
+mas "A Companion for SwiftUI", id: 1485436674
+mas "AdGuard for Safari", id: 1440147259
+mas "Adobe Lightroom", id: 1451544217
+mas "Amphetamine", id: 937984704
+mas "Apple Configurator", id: 1037126344
+mas "Bakery", id: 1575220747
+mas "Code Recipes", id: 1012115120
+mas "Developer", id: 640199958
+mas "DevUtils", id: 1533756032
+mas "Disk Speed Test", id: 425264550
+mas "DjVu Reader Pro", id: 895264364
+mas "GarageBand", id: 682658836
+mas "Grammarly for Safari", id: 1462114288
+mas "Haskell", id: 841285201
+mas "iMovie", id: 408981434
+mas "JSONPeep", id: 1458969831
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Magnet", id: 441258766
+mas "Medis", id: 1063631769
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "MoneyWiz", id: 1511185140
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Playgrounds", id: 1496833156
+mas "Prime Video", id: 545519333
+mas "Reeder", id: 1529448980
+mas "Remote Desktop", id: 409907375
+mas "SnippetsLab", id: 1006087419
+mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
+mas "Things", id: 904280696
+mas "Transmit", id: 1436522307
+mas "Transporter", id: 1450874784
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
