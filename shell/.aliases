@@ -7,14 +7,11 @@
 
 # === Aliases ===
 
-# exa:
-alias la="exa -abghl --git"
-
 # Sorts directories in top, colors, and prints `/` at directories:
-alias ls="ls -G"
+alias ls="gls --color -h --group-directories-first -F"
 
-# git with hub:
-alias git="hub"
+# `bat` styling:
+alias bat="\bat --theme=GitHub"
 
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
@@ -22,20 +19,14 @@ alias xq="xmllint --format"
 # Show local ip:
 alias localip="ipconfig getifaddr en0"
 
-# Bell when the program is finished. It is useful for some
-# time-consuming operations. Like:
-# > npm install | a
-alias a="terminal-notifier -sound default"
-
-# Just show the notification without context:
-# > poetry install && aa
-alias aa="a -message Done"
-
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# I use this a lot:
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Neovim:
 alias v='nvim'
@@ -48,6 +39,10 @@ alias c='code -n `fzf -i`'
 
 # ag
 alias s='ag'
+
+# python2 (required by npm and other tools, installed via pyenv):
+# (won't work without `pyenv` and `pyenv install 2.7.17`)
+alias python2="$HOME/.pyenv/versions/2.7.18/bin/python2"
 
 # Cabal
 alias cbuild="cabal build --enable-tests --enable-benchmarks --write-ghc-environment-files=always -O0"

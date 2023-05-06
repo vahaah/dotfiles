@@ -4,117 +4,44 @@
 #
 # This file is used as a part of `.shell_env`
 
+if [ "$CODESPACES" = true ]; then
+  HOMEBREW_DIR="/usr/local"
+else
+  HOMEBREW_DIR="/opt/homebrew"
+fi
+
 # === Compiler flags ===
-
-# XCode path
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
-
-# Libs
-export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
-export LD_LIBRARY_PATH="$(brew --prefix)/lib:$LD_LIBRARY_PATH"
-export DYLD_LIBRARY_PATH="$(brew --prefix)/lib:$(brew --prefix gdal):$(brew --prefix gdal)/lib:$(brew --prefix geos):$(brew --prefix geos)/lib:$DYLD_LIBRARY_PATH"
-
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
-PATH="$(brew --prefix openssl@3)/bin:$PATH"
-LDFLAGS="-L$(brew --prefix openssl@3)/lib"
-CPPFLAGS="-I $(brew --prefix openssl@3)/include"
-PKG_CONFIG_PATH="$(brew --prefix openssl@3)/lib/pkgconfig"
+export LDFLAGS="-L$HOMEBREW_DIR/opt/openssl/lib"
+export CPPFLAGS="-I$HOMEBREW_DIR/opt/openssl/include"
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+export PKG_CONFIG_PATH="$HOMEBREW_DIR/opt/openssl/lib/pkgconfig"
+
 
 # === Path modifications ===
 
-# These lines should be the first ones
+# These lines should be the first ones!
 
 # GPG agent:
-PATH="$(brew --prefix)/opt/gpg2/bin:$PATH"
+PATH="$HOMEBREW_DIR/opt/gpg-agent/bin:$PATH"
 
-# Now `python` points to `python3` from `brew`:
-PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"
-
-# Adds `pipsi` and `pipx` binary files:
+# Adds `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
-# Cargo:
-PATH="$HOME/.cargo/bin:$PATH"
-
 # Adds `poetry` binary, should be added to the end:
-PATH="$PATH:$HOME/.poetry/bin"
+PATH="$HOME/.poetry/bin:$PATH"
 
-# postgres utilities like `psql`:
-PATH="$(brew --prefix)/opt/postgresql/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/postgresql/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/postgresql/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/postgresql/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# sqlite:
-PATH="$(brew --prefix)/opt/sqlite/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/sqlite/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/sqlite/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-
+# postgres@14 utilities like `psql`:
+if [ "$CODESPACES" = true ]; then
+  PATH="$HOMEBREW_DIR/opt/postgresql/bin:$PATH"
+else
+  PATH="$HOMEBREW_DIR/opt/postgresql@14/bin:$PATH"
+fi
 # npm:
-PATH="/usr/local/share/npm/bin:$PATH"
+PATH="$HOMEBREW_DIR/share/npm/bin:$PATH"
 
-# imagemagick:
-PATH="$(brew --prefix)/opt/imagemagick/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/imagemagick/lib  $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/imagemagick/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/imagemagick/lib/pkgconfig:$PKG_CONFIG_PATH"
 
-# curl:
-PATH="$(brew --prefix)/opt/curl/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/curl/lib  $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/curl/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# ruby:
-PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/ruby/lib  $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/ruby/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# krb5:
-PATH="$(brew --prefix)/opt/krb5/bin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/krb5/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/krb5/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# flutter:
-PATH="$HOME/.flutter_bin/bin:$PATH"
-
-# openldap:
-PATH="$(brew --prefix)/opt/openldap/bin:$PATH"
-PATH="$(brew --prefix)/opt/openldap/sbin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/openldap/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/openldap/include $CPPFLAGS"
-
-# zlib:
-LDFLAGS="-L$(brew --prefix)/opt/zlib/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/zlib/include $CPPFLAGS"
-PKG_CONFIG_PATH="$(brew --prefix)/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# bzip2:
-PATH="$(brew --prefix)/opt/bzip2/bin:$PATH"
-PATH="$(brew --prefix)/opt/bzip2/sbin:$PATH"
-LDFLAGS="-L$(brew --prefix)/opt/bzip2/lib $LDFLAGS"
-CPPFLAGS="-I$(brew --prefix)/opt/bzip2/include $CPPFLAGS"
-
-# Haskell
-PATH="$PATH:$HOME/.ghcup/bin"
-
-# gdal
-GDAL_LIBRARY_PATH="$(brew --prefix gdal)/lib/libgdal.dylib"
-
-# geos
-GEOS_LIBRARY_PATH="$(brew --prefix geos)/lib/libgeos_c.dylib"
-
-export PATH
-export LDFLAGS
-export CPPFLAGS
-export PKG_CONFIG_PATH
-
-# go:
-export GOPATH="$HOME/Go/"
 # === General ===
 
 # Editor:
@@ -130,9 +57,6 @@ export PYTHONIOENCODING='UTF-8'
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
-# Ruby build
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-
 # Pagers:
 # This affects every invocation of `less`.
 #
@@ -143,34 +67,25 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 #   -M   show more info at the bottom prompt line
 #   -x4  tabs are 4 instead of 8
 export LESS="-iRFXMx4"
-export PAGER='bat'
-export MANPAGER='bat'
-
-
-# === Virtualenvs ===
-
-export PIPENV_VENV_IN_PROJECT=true # look for `.venv` dir inside project
-export PIPENV_HIDE_EMOJIS=true # no emojis!
-export PIPENV_COLORBLIND=true # disables colors, so colorful!
-export PIPENV_NOSPIN=true # disables spinner for cleaner logs
+export PAGER='less'
+export MANPAGER='less'
 
 
 # === Version managers ===
 
 # nvm:
 export NVM_DIR="$HOME/.nvm"
-source "$(brew --prefix)/opt/nvm/nvm.sh"
+source "$HOMEBREW_DIR/opt/nvm/nvm.sh"
 
 # pyenv:
 eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # rbenv:
 eval "$(rbenv init -)"
 
-# tldr:
-source ~/.tldr.complete
+# rustup:
+# source "$HOME/.cargo/env"
+
 
 # === Histories ===
 
@@ -179,39 +94,18 @@ export NODE_REPL_HISTORY="$HOME/.node_history"
 # Use sloppy mode by default, matching web browsers.
 export NODE_REPL_MODE='sloppy'
 
-# === Android ===
-
-export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# === starship ===
-
-eval "$(starship init zsh)"
-
-# === GitHub ===
-
-eval "$(gh completion --shell zsh)"
+# Erlang and Elixir shell history:
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 
-# === Brew ===
+# === Code highlight ===
+# https://github.com/zsh-users/zsh-syntax-highlighting
 
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+# We won't highlight code longer than 200 chars, because it is slow:
+export ZSH_HIGHLIGHT_MAXLENGTH=200
 
-    autoload -Uz compinit
-    compinit
-fi
 
-# === gnutls ===
+# === PATH ===
 
-export GUILE_TLS_CERTIFICATE_DIRECTORY=$(brew --prefix)/etc/gnutls/
-
-# Stack
-
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-eval "$(stack --bash-completion-script stack)"
-
+# This should be the last line:
+export PATH

@@ -1,0 +1,55 @@
+---
+
+- clean: ['~']
+
+# See https://ohmyz.sh/
+- shell:
+  - command: |
+      sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    description: Install Oh-My-Zsh
+    stdout: true
+    stderr: true
+
+- link:
+    # Terminal:
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/bashrc
+    ~/.zshrc:
+      path: config/zshrc
+      force: true
+    ~/.shell_env: config/shell_env
+
+    ~/.hushlogin: config/hushlogin
+    ~/.inputrc: config/inputrc
+    ~/.zplugrc: config/zplugrc
+    ~/.config/starship.toml: config/starship.toml
+    ~/.tldr.complete: config/tldr.complete
+
+    # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+    ~/.gitattributes_global: config/gitattributes
+
+    # Tools:
+    ~/.psqlrc: config/psqlrc
+    ~/.sqliterc: config/sqliterc
+
+    # Editors:
+    ~/.editorconfig: config/editorconfig
+    ~/.nanorc: config/nanorc
+    ~/.emacs.d/init.el: emacs/init.el
+
+    # SSH:
+    ~/.ssh/config:
+      path: config/ssh_config
+      force: true
+      create: true
+
+    # GPG:
+    ~/.gnupg/gpg-agent.conf:
+      path: config/gpgagent
+      force: true
+      create: true
