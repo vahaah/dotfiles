@@ -6,17 +6,40 @@
 
 if [ "$CODESPACES" = true ]; then
   HOMEBREW_DIR="/usr/local"
+  OPENSSL_DIR="/usr/local/opt/openssl"
 else
   HOMEBREW_DIR="/opt/homebrew"
+  OPENSSL_DIR=/opt/homebrew/opt/openssl@3
 fi
 
 # === Compiler flags ===
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
-export LDFLAGS="-L$HOMEBREW_DIR/opt/openssl/lib"
-export CPPFLAGS="-I$HOMEBREW_DIR/opt/openssl/include"
+PATH="$OPENSSL_DIR/bin:$PATH"
+
+export LDFLAGS="-L$OPENSSL_DIR/lib"
+export CPPFLAGS="-I$OPENSSL_DIR/include"
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
-export PKG_CONFIG_PATH="$HOMEBREW_DIR/opt/openssl/lib/pkgconfig"
+export PKG_CONFIG_PATH="$OPENSSL_DIR/lib/pkgconfig"
+
+# This is required because `libxml2` is keg-only in `brew`,
+# see: `brew info libxml2` for more information
+PATH="$HOMEBREW_DIR/opt/libxml2/bin:$PATH"
+
+export LDFLAGS="-L$HOMEBREW_DIR/opt/libxml2/lib"
+export CPPFLAGS="-I$HOMEBREW_DIR/opt/libxml2/include"
+export PKG_CONFIG_PATH="$HOMEBREW_DIR/opt/libxml2/lib/pkgconfig"
+
+# This is required because `libomp` is keg-only in `brew`,
+# see: `brew info libomp` for more information
+export LDFLAGS="-L$HOMEBREW_DIR/opt/libomp/lib"
+export CPPFLAGS="-I$HOMEBREW_DIR/opt/libomp/include"
+
+# This is required because `openjdk` is keg-only in `brew`,
+# see: `brew info openjdk` for more information
+PATH="$HOMEBREW_DIR/opt/openjdk/bin:$PATH"
+
+export CPPFLAGS="-I$HOMEBREW_DIR/opt/openjdk/include"
 
 
 # === Path modifications ===
@@ -40,6 +63,12 @@ else
 fi
 # npm:
 PATH="$HOMEBREW_DIR/share/npm/bin:$PATH"
+
+# go:
+export GOPATH="$HOME/Go/"
+
+# Ruby build
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=${OPENSSL_DIR}"
 
 
 # === General ===
@@ -78,7 +107,6 @@ export NVM_DIR="$HOME/.nvm"
 source "$HOMEBREW_DIR/opt/nvm/nvm.sh"
 
 # pyenv:
-eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -105,6 +133,15 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # We won't highlight code longer than 200 chars, because it is slow:
 export ZSH_HIGHLIGHT_MAXLENGTH=200
+
+# starship:
+eval "$(starship init zsh)"
+
+# GitHub:
+eval "$(gh completion --shell zsh)"
+
+# tldr:
+source ~/.tldr.complete
 
 
 # === PATH ===

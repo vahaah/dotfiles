@@ -10,6 +10,12 @@
     stdout: true
     stderr: true
 
+  - command: |
+      ln -s /opt/homebrew/lib ~/lib
+    description: Link Homebrew lib
+    stdout: true
+    stderr: true
+
 - link:
     # Terminal:
     ~/.shell:

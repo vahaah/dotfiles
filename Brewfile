@@ -3,20 +3,15 @@ tap "adoptopenjdk/openjdk"
 tap "bramstein/webfonttools"
 tap "buildpacks/tap"
 tap "d12frosted/emacs-plus"
-tap "dart-lang/dart"
-tap "getantibody/tap"
 tap "github/gh"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "kowainik/tap"
 tap "mongodb/brew"
 tap "nektos/tap"
-tap "npiv/chatblade"
 tap "sass/sass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
@@ -24,7 +19,6 @@ brew "act"
 brew "libyaml"
 brew "ansible"
 brew "ansible-lint"
-brew "antibody"
 brew "openexr"
 brew "webp"
 brew "bzip2"
@@ -39,9 +33,9 @@ brew "bat"
 brew "blueutil"
 brew "cabal-install"
 brew "fontconfig"
-brew "gettext"
 brew "glib"
 brew "libffi"
+brew "pkg-config"
 brew "pcre"
 brew "cgal"
 brew "cloc"
@@ -85,6 +79,7 @@ brew "gnu-tar"
 brew "gnupg"
 brew "go"
 brew "graphviz"
+brew "libpaper"
 brew "hadolint"
 brew "helm"
 brew "highlight"
@@ -107,7 +102,7 @@ brew "lftp"
 brew "libusb-compat"
 brew "libxmlsec1"
 brew "lzlib"
-brew "mailhog"
+brew "mailhog", restart_service: true
 brew "mas"
 brew "mono-libgdiplus"
 brew "nano"
@@ -166,8 +161,6 @@ brew "zplug"
 brew "zsh"
 brew "buildpacks/tap/pack"
 brew "d12frosted/emacs-plus/emacs-plus@27"
-brew "heroku/brew/heroku"
-brew "npiv/chatblade/chatblade"
 brew "wagoodman/dive/dive"
 brew "weaveworks/tap/eksctl"
 cask "1password-cli"
@@ -194,7 +187,6 @@ cask "webpquicklook"
 cask "wkhtmltopdf"
 mas "1Password for Safari", id: 1569813296
 mas "A Companion for SwiftUI", id: 1485436674
-mas "AdGuard for Safari", id: 1440147259
 mas "Adobe Lightroom", id: 1451544217
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
@@ -202,7 +194,6 @@ mas "Bakery", id: 1575220747
 mas "Code Recipes", id: 1012115120
 mas "Developer", id: 640199958
 mas "DevUtils", id: 1533756032
-mas "Disk Speed Test", id: 425264550
 mas "DjVu Reader Pro", id: 895264364
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
@@ -211,6 +202,7 @@ mas "iMovie", id: 408981434
 mas "JSONPeep", id: 1458969831
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
+mas "Magic Lasso", id: 1198047227
 mas "Magnet", id: 441258766
 mas "Medis", id: 1063631769
 mas "Microsoft Excel", id: 462058435
@@ -220,10 +212,11 @@ mas "Microsoft Word", id: 462054704
 mas "MoneyWiz", id: 1511185140
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
 mas "Playgrounds", id: 1496833156
-mas "Prime Video", id: 545519333
 mas "Reeder", id: 1529448980
 mas "Remote Desktop", id: 409907375
+mas "Slack", id: 803453959
 mas "SnippetsLab", id: 1006087419
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
