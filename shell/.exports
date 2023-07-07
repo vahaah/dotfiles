@@ -59,7 +59,7 @@ PATH="$HOME/.poetry/bin:$PATH"
 if [ "$CODESPACES" = true ]; then
   PATH="$HOMEBREW_DIR/opt/postgresql/bin:$PATH"
 else
-  PATH="$HOMEBREW_DIR/opt/postgresql@14/bin:$PATH"
+  PATH="$HOMEBREW_DIR/opt/postgresql@15/bin:$PATH"
 fi
 # npm:
 PATH="$HOMEBREW_DIR/share/npm/bin:$PATH"
