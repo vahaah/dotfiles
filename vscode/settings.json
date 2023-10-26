@@ -175,7 +175,6 @@
   },
   "githubPullRequests.pullBranch": "never",
   "git.confirmSync": false,
-  "git.enableCommitSigning": true,
   "settingsSync.ignoredSettings": [
     "editor.fontFamily"
   ],
