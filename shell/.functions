@@ -86,7 +86,7 @@ function hey_gpt() {
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer $OPENAI_API_KEY" \
         -d '{
-        "model": "gpt-4",
+        "model": "gpt-4-1106-preview",
         "messages": [{"role": "user", "content": "'$prompt'"}],
         "temperature": 0.7
     }' | jq -r '.choices[0].message.content'
@@ -103,7 +103,7 @@ function data_gpt() {
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $OPENAI_API_KEY" \
     -d '{
-        "model": "gpt-4",
+        "model": "gpt-4-1106-preview",
         "messages": [{"role": "user", "content": "'$prompt_input'"}],
         "temperature": 0.7
     }' | jq -r '.choices[0].message.content'
