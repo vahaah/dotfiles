@@ -36,5 +36,3 @@ if [[ -f "$HOME/.shell_env_local" ]]; then
   source "$HOME/.shell_env_local"
 fi
 
-# === Shell copilot ===
-eval "$(github-copilot-cli alias -- "$0")"
