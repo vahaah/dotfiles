@@ -36,7 +36,6 @@ plugins=(
   colorize
   docker
   docker-compose
-  emacs
   extract
   flutter
   gem

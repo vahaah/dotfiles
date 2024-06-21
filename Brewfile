@@ -2,13 +2,10 @@ tap "1password/tap"
 tap "adoptopenjdk/openjdk"
 tap "bramstein/webfonttools"
 tap "buildpacks/tap"
-tap "d12frosted/emacs-plus"
 tap "getsentry/tools"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
@@ -26,6 +23,7 @@ brew "openssl@3"
 brew "asciinema"
 brew "aspell"
 brew "automake"
+brew "libyaml"
 brew "aws-shell"
 brew "awscli"
 brew "bash"
@@ -39,9 +37,6 @@ brew "glib"
 brew "cgal"
 brew "cloc"
 brew "cmake"
-brew "libyaml"
-brew "ruby"
-brew "cocoapods"
 brew "colordiff"
 brew "coreutils"
 brew "ctags"
@@ -50,17 +45,12 @@ brew "diff-so-fancy"
 brew "dive"
 brew "docker"
 brew "docker-clean"
-brew "doctl"
 brew "doitlive"
 brew "duti"
-brew "unixodbc"
-brew "elixir"
 brew "eot-utils"
-brew "exa"
 brew "fd"
-brew "woff2"
-brew "fontforge"
 brew "fpp"
+brew "unixodbc"
 brew "freetds"
 brew "fzf"
 brew "gawk"
@@ -74,7 +64,6 @@ brew "libxml2"
 brew "nss"
 brew "openjpeg"
 brew "gdal"
-brew "geoip"
 brew "gh"
 brew "git"
 brew "git-delta"
@@ -86,11 +75,6 @@ brew "helm"
 brew "highlight"
 brew "htop"
 brew "hub"
-brew "hugo"
-brew "libffi"
-brew "pcre"
-brew "libomp", link: true
-brew "imagemagick"
 brew "imagemagick@6"
 brew "inetutils"
 brew "infracost"
@@ -101,7 +85,8 @@ brew "openjdk"
 brew "kotlin"
 brew "ktlint"
 brew "ldns"
-brew "lftp"
+brew "libffi"
+brew "libomp", link: true
 brew "libpaper"
 brew "libusb-compat"
 brew "localstack"
@@ -117,22 +102,22 @@ brew "nvm"
 brew "openapi-generator"
 brew "optipng"
 brew "pandoc"
+brew "pcre"
 brew "pgcli"
 brew "pinentry-mac"
-brew "sfcgal"
-brew "postgis"
-brew "postgresql@15"
+brew "postgresql@15", restart_service: true
 brew "pre-commit"
 brew "pth"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "python-tabulate"
-brew "python@3.8"
 brew "ruby-build"
 brew "rbenv"
 brew "redis", restart_service: true
+brew "ruby"
 brew "rust"
 brew "rustup-init"
+brew "sfcgal"
 brew "shellcheck"
 brew "ssh-copy-id"
 brew "starship"
@@ -140,33 +125,28 @@ brew "swift-format"
 brew "swiftformat"
 brew "swig"
 brew "terminal-notifier"
-brew "terraform"
 brew "terragrunt"
 brew "the_silver_searcher"
 brew "tig"
-brew "tinc"
 brew "tldr"
 brew "tokei"
 brew "translate-toolkit"
 brew "tree"
 brew "ttyrec"
-brew "ttygif"
 brew "vim"
 brew "watchman"
 brew "wget"
 brew "wifi-password"
+brew "woff2"
 brew "yarn"
-brew "youtube-dl"
 brew "yq"
 brew "z"
 brew "zlib"
 brew "zplug"
 brew "zsh"
 brew "buildpacks/tap/pack"
-brew "d12frosted/emacs-plus/emacs-plus@27"
 brew "getsentry/tools/sentry-wizard"
 brew "supabase/tap/supabase"
-brew "tvuotila/libxmlsec1/libxmlsec1@1.2.37"
 brew "weaveworks/tap/eksctl"
 cask "1password-cli"
 cask "android-platform-tools"
@@ -177,18 +157,47 @@ cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "gpg-suite"
 cask "postman"
-cask "qlcolorcode"
-cask "qlimagesize"
-cask "qlmarkdown"
-cask "qlstephen"
-cask "qlvideo"
-cask "quicklook-json"
-cask "quicklookase"
-cask "suspicious-package"
-cask "tunnelblick"
 cask "visual-studio-code"
-cask "webpquicklook"
-cask "wkhtmltopdf"
+mas "1Password for Safari", id: 1569813296
+mas "A Companion for SwiftUI", id: 1485436674
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Code Recipes", id: 1012115120
+mas "Core Data Lab", id: 1460684638
+mas "Developer", id: 640199958
+mas "DevUtils", id: 1533756032
+mas "Grammarly for Safari", id: 1462114288
+mas "Haskell", id: 841285201
+mas "iMovie", id: 408981434
+mas "JSONPeep", id: 1458969831
+mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "Magnet", id: 441258766
+mas "Medis", id: 1063631769
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "MoneyWiz", id: 1511185140
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pastel", id: 413897608
+mas "Pixelmator Pro", id: 1289583905
+mas "Playgrounds", id: 1496833156
+mas "Profiling Viewer", id: 1079647046
+mas "Reeder", id: 1529448980
+mas "reMarkable", id: 1276493162
+mas "Remote Desktop", id: 409907375
+mas "Slack", id: 803453959
+mas "SnippetsLab", id: 1006087419
+mas "Swifter", id: 1621133381
+mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
+mas "Things", id: 904280696
+mas "Transmit", id: 1436522307
+mas "Transporter", id: 1450874784
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
 vscode "aeschli.vscode-css-formatter"
 vscode "ahmadalli.vscode-nginx-conf"
 vscode "alexdima.copy-relative-path"
