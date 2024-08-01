@@ -70,6 +70,9 @@ export GOPATH="$HOME/Go/"
 # Ruby build
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=${OPENSSL_DIR}"
 
+# cargo:
+PATH="$HOME/.cargo/bin:$PATH"
+
 
 # === General ===
 
@@ -102,19 +105,18 @@ export MANPAGER='less'
 
 # === Version managers ===
 
+# rustup:
+# source "$HOME/.cargo/env"
+
 # nvm:
 export NVM_DIR="$HOME/.nvm"
 source "$HOMEBREW_DIR/opt/nvm/nvm.sh"
 
-# pyenv:
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# rye:
+source "$HOME/.rye/env"
 
 # rbenv:
 eval "$(rbenv init -)"
-
-# rustup:
-# source "$HOME/.cargo/env"
 
 
 # === Histories ===

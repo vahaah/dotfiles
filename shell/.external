@@ -56,13 +56,3 @@ n() {
     rm -f "$NNN_TMPFILE"
   fi
 }
-
-# === virtualenvwrapper ===
-
-export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=~/.pyenv/shims/python
-# if [[ -r ~/.pyenv/shims/virtualenvwrapper.sh ]]; then
-#     source ~/.pyenv/shims/virtualenvwrapper.sh
-# else
-#     echo "WARNING: Can't find virtualenvwrapper.sh"
-# fi

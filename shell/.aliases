@@ -40,10 +40,6 @@ alias c='code -n `fzf -i`'
 # ag
 alias s='ag'
 
-# python2 (required by npm and other tools, installed via pyenv):
-# (won't work without `pyenv` and `pyenv install 2.7.17`)
-alias python2="$HOME/.pyenv/versions/2.7.18/bin/python2"
-
 # Cabal
 alias cbuild="cabal build --enable-tests --enable-benchmarks --write-ghc-environment-files=always -O0"
 alias ctest="cabal test --enable-tests --test-show-details=direct -O0"

@@ -16,6 +16,12 @@
     stdout: true
     stderr: true
 
+  - command: |
+      cargo install --git https://github.com/astral-sh/rye rye
+    description: Install rye
+    stdout: true
+    stderr: true
+
 - link:
     # Terminal:
     ~/.shell:

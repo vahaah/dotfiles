@@ -10,6 +10,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
 tap "nektos/tap"
+tap "oven-sh/bun"
 tap "sass/sass"
 tap "supabase/tap"
 tap "tvuotila/libxmlsec1"
@@ -37,6 +38,7 @@ brew "glib"
 brew "cgal"
 brew "cloc"
 brew "cmake"
+brew "cmake-docs"
 brew "colordiff"
 brew "coreutils"
 brew "ctags"
@@ -69,7 +71,6 @@ brew "git"
 brew "git-delta"
 brew "gnu-tar"
 brew "go"
-brew "graphviz"
 brew "hadolint"
 brew "helm"
 brew "highlight"
@@ -108,15 +109,13 @@ brew "pinentry-mac"
 brew "postgresql@15", restart_service: true
 brew "pre-commit"
 brew "pth"
-brew "pyenv"
-brew "pyenv-virtualenv"
 brew "python-tabulate"
 brew "ruby-build"
 brew "rbenv"
 brew "redis", restart_service: true
 brew "ruby"
 brew "rust"
-brew "rustup-init"
+brew "rustup"
 brew "sfcgal"
 brew "shellcheck"
 brew "ssh-copy-id"
@@ -146,6 +145,7 @@ brew "zplug"
 brew "zsh"
 brew "buildpacks/tap/pack"
 brew "getsentry/tools/sentry-wizard"
+brew "oven-sh/bun/bun"
 brew "supabase/tap/supabase"
 brew "weaveworks/tap/eksctl"
 cask "1password-cli"
@@ -172,12 +172,8 @@ mas "iMovie", id: 408981434
 mas "JSONPeep", id: 1458969831
 mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
-mas "Magnet", id: 441258766
 mas "Medis", id: 1063631769
-mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
 mas "MoneyWiz", id: 1511185140
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -188,6 +184,8 @@ mas "Profiling Viewer", id: 1079647046
 mas "Reeder", id: 1529448980
 mas "reMarkable", id: 1276493162
 mas "Remote Desktop", id: 409907375
+mas "RocketSim", id: 1504940162
+mas "Screenshot Studio", id: 6473832582
 mas "Slack", id: 803453959
 mas "SnippetsLab", id: 1006087419
 mas "Swifter", id: 1621133381
@@ -196,8 +194,8 @@ mas "TestFlight", id: 899247664
 mas "Things", id: 904280696
 mas "Transmit", id: 1436522307
 mas "Transporter", id: 1450874784
-mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
+mas "‎WhatsApp", id: 310633997
 vscode "aeschli.vscode-css-formatter"
 vscode "ahmadalli.vscode-nginx-conf"
 vscode "alexdima.copy-relative-path"
@@ -245,6 +243,8 @@ vscode "ms-vscode.cpptools"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.remote-repositories"
 vscode "ms-vscode.test-adapter-converter"
+vscode "mtxr.sqltools"
+vscode "prisma.prisma"
 vscode "redhat.vscode-xml"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
