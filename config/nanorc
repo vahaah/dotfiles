@@ -6,7 +6,7 @@
 
 # Editor
 
-set morespace
+# set morespace
 
 set tabstospaces
 set trimblanks
@@ -17,7 +17,7 @@ set constantshow
 
 # UX
 
-set smooth
+# set smooth
 
 # Extra files
 

@@ -106,7 +106,7 @@ brew "pandoc"
 brew "pcre"
 brew "pgcli"
 brew "pinentry-mac"
-brew "postgresql@15", restart_service: true
+brew "postgresql@17", restart_service: true
 brew "pre-commit"
 brew "pth"
 brew "python-tabulate"
