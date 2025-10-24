@@ -68,3 +68,8 @@ export PATH="/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/us
 source $ZSH/oh-my-zsh.sh
 source $HOME/.shell_env
 
+
+
+# bun completions
+[ -s "/Users/vahaah/.bun/_bun" ] && source "/Users/vahaah/.bun/_bun"
+export PATH="/Users/vahaah/.bun/bin:$PATH"

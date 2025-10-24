@@ -38,7 +38,6 @@
     ~/.inputrc: config/inputrc
     ~/.zplugrc: config/zplugrc
     ~/.config/starship.toml: config/starship.toml
-    ~/.tldr.complete: config/tldr.complete
 
     # Git:
     ~/.gitconfig: config/gitconfig

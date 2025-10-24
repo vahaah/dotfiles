@@ -31,5 +31,9 @@
 {
     "key": "shift+alt+w",
     "command": "workbench.action.closePanel"
+},
+{
+    "key": "cmd+i",
+    "command": "composerMode.agent"
 }
 ]

@@ -1,21 +1,15 @@
-tap "1password/tap"
 tap "adoptopenjdk/openjdk"
-tap "bramstein/webfonttools"
 tap "buildpacks/tap"
 tap "getsentry/tools"
 tap "github/gh"
-tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "homebrew/services"
 tap "mongodb/brew"
-tap "nektos/tap"
 tap "oven-sh/bun"
 tap "sass/sass"
+tap "stripe/stripe-cli"
 tap "supabase/tap"
 tap "tvuotila/libxmlsec1"
-tap "wagoodman/dive"
-tap "weaveworks/tap"
 brew "act"
 brew "openexr"
 brew "webp"
@@ -30,14 +24,16 @@ brew "bash"
 brew "bash-completion"
 brew "oniguruma"
 brew "bat"
+brew "biome"
 brew "blueutil"
+brew "icu4c@77"
 brew "fontconfig"
 brew "glib"
+brew "icu4c@76"
 brew "openjdk"
 brew "bundletool"
 brew "bzip2"
 brew "cabal-install"
-brew "cgal"
 brew "cloc"
 brew "cmake"
 brew "cmake-docs"
@@ -45,6 +41,7 @@ brew "colordiff"
 brew "coreutils"
 brew "ctags"
 brew "curl"
+brew "deno"
 brew "diff-so-fancy"
 brew "dive"
 brew "docker"
@@ -62,7 +59,7 @@ brew "freetds"
 brew "fzf"
 brew "gawk"
 brew "gnupg"
-brew "pkg-config"
+brew "pkgconf"
 brew "libde265"
 brew "libgeotiff"
 brew "libheif"
@@ -110,16 +107,17 @@ brew "pandoc"
 brew "pcre"
 brew "pgcli"
 brew "pinentry-mac"
-brew "postgresql@17", restart_service: true
+brew "pixi"
+brew "pnpm"
+brew "postgresql@17", restart_service: :changed
 brew "pre-commit"
 brew "pth"
 brew "python-tabulate"
 brew "ruby-build"
 brew "rbenv"
-brew "redis", restart_service: true
+brew "redis", restart_service: :changed
 brew "rust"
 brew "rustup"
-brew "sfcgal"
 brew "shellcheck"
 brew "ssh-copy-id"
 brew "starship"
@@ -128,11 +126,11 @@ brew "swiftformat"
 brew "swig"
 brew "the_silver_searcher"
 brew "tig"
-brew "tldr"
 brew "tokei"
 brew "translate-toolkit"
 brew "tree"
 brew "ttyrec"
+brew "uv"
 brew "vim"
 brew "watchman"
 brew "wget"
@@ -147,20 +145,55 @@ brew "zsh"
 brew "buildpacks/tap/pack"
 brew "getsentry/tools/sentry-wizard"
 brew "oven-sh/bun/bun"
+brew "stripe/stripe-cli/stripe"
 brew "supabase/tap/supabase"
-brew "weaveworks/tap/eksctl"
-cask "1password-cli"
 cask "android-platform-tools"
 cask "aws-vault"
+cask "cursor"
+cask "devutils"
 cask "font-consolas-for-powerline"
 cask "font-fira-code"
 cask "font-inconsolata"
 cask "font-inconsolata-for-powerline"
 cask "gpg-suite"
+cask "orbstack"
 cask "postman"
 cask "visual-studio-code"
-cask "warp"
 cask "zulu@17"
+mas "1Password for Safari", id: 1569813296
+mas "A Companion for SwiftUI", id: 1485436674
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Code Recipes", id: 1012115120
+mas "Core Data Lab", id: 1460684638
+mas "Developer", id: 640199958
+mas "Final Cut Pro", id: 424389933
+mas "Haskell", id: 841285201
+mas "Helm", id: 6479357934
+mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "Medis", id: 1063631769
+mas "MoneyWiz", id: 1511185140
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pastel", id: 413897608
+mas "Pixelmator Pro", id: 1289583905
+mas "Profiling Viewer", id: 1079647046
+mas "Reeder", id: 1529448980
+mas "reMarkable", id: 1276493162
+mas "Remote Desktop", id: 409907375
+mas "RocketSim", id: 1504940162
+mas "Screenshot Studio", id: 6473832582
+mas "Slack", id: 803453959
+mas "SnippetsLab", id: 1006087419
+mas "Swift Playground", id: 1496833156
+mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
+mas "Things", id: 904280696
+mas "Transmit", id: 1436522307
+mas "Transporter", id: 1450874784
+mas "WhatsApp", id: 310633997
+mas "Xcode", id: 497799835
 vscode "aeschli.vscode-css-formatter"
 vscode "ahmadalli.vscode-nginx-conf"
 vscode "alexdima.copy-relative-path"

@@ -9,8 +9,11 @@ if [ "$CODESPACES" = true ]; then
   OPENSSL_DIR="/usr/local/opt/openssl"
 else
   HOMEBREW_DIR="/opt/homebrew"
-  OPENSSL_DIR=/opt/homebrew/opt/openssl@3
+  OPENSSL_DIR="/opt/homebrew/opt/openssl@3"
 fi
+
+# Homebrew will automatically update itself every 24 hours:
+export HOMEBREW_AUTO_UPDATE_SECS=86400
 
 # === Compiler flags ===
 # This is required because `openssl` is keg-only in `brew`,
@@ -141,9 +144,6 @@ eval "$(starship init zsh)"
 
 # GitHub:
 eval "$(gh completion --shell zsh)"
-
-# tldr:
-source ~/.tldr.complete
 
 # Android SDK:
 export ANDROID_HOME="$HOME/Library/Android/sdk"
